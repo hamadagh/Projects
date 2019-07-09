@@ -14,6 +14,8 @@ const quotes = [
     "There is little success where there is little laughter.",
     "We cannot solve our problems with the same thinking we used when we created them."
   ];
-
-  random(quotes);
-  
+ let button = document.getElementById('button');
+ button.addEventListener('click', (e) => {
+    e.preventDefault();
+    random(quotes)
+ });
