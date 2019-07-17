@@ -34,11 +34,13 @@ cityForm.addEventListener('submit', e => {
     let city = cityInput.value.trim();
     console.log(city);
      cityInput.value = '';
-    updateCity(city).then(data => console.log(data))
+    updateCity(city).then(data => {
+      document.querySelector('#header').innerHTML = `${city}`;
+      document.querySelector('#temperature').innerHTML = Math.floor(`${data.weather.Temperature.Metric.Value}`)+ "&#8451;";
+      console.log(data)})
     .catch(err => console.log(err));
 
-    document.querySelector('#header').innerHTML = `${city}`;
-    document.querySelector('#temperature').innerHTML = ``;
+
 
 
 })

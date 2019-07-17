@@ -1,4 +1,4 @@
-const apiKey = "GMUlOH1VSDULkcAgUcCkxmUp4LGbLtUt";
+const apiKey = "6vfW4mMUIQczvUsxaXcQZjcES3C3PT1S";
 
 const getWeather = async (locationKey) => {
     let base = 'http://dataservice.accuweather.com/currentconditions/v1/';
