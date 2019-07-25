@@ -108,7 +108,7 @@ html{
     height: 260px;
     padding-top: 60px;
     
-    background-image: url(/src/images/rick2.png);
+    background-image: url(/src/images/rick3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -120,9 +120,9 @@ html{
     border-radius: 50%;
     height: 30px;
     width: 30px;
-    background: #CCC;
+    background:white;
     z-index: 1;
-    margin-top: 15px;
+    margin-top: 16px;
     
   }
   .eye:after { /*pupil*/
@@ -141,3 +141,6 @@ html{
       left: 50%;
       z-index: 0;
   }
+#temperature {
+    font-size: 30px;
+}

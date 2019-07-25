@@ -4,7 +4,7 @@ import "./banner.css";
 
 
 const images = () =>{
-    document.body.style.backgroundImage = "url('../src/images/bg.svg')";
+    document.body.style.backgroundImage = "url('../src/images/background.svg')";
     document.body.style.backgroundRepeat = "no-repeat"; 
     document.body.style.backgroundPosition = "center";
     document.body.style.backgroundSize = "cover";
