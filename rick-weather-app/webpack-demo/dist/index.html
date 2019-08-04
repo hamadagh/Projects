@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Weather app</title>
+</head>
+
+<body>
+
+
+  <div class="info">
+    <h1 id="header" class="text-center text-white mt-5 display-4"></h1>
+    <div class="text-center icon">
+      <img src="" class="mx-auto p-1">
+    </div>
+
+    <p id="temperature" class="temp text-center text-white"></p>
+  </div>
+  <div class="text-center">
+    <form id="form">
+      <input class="mx-auto text-center input text-white" placeholder="Choose a City on earth"
+        onfocus="this.placeholder=''">
+      <button type="submit" class="button mt-3 text-white"><span class="search">Search</span></button>
+    </form>
+  </div>
+  <section class="move-area">
+    <div class='eyes text-center'>
+      <div class='eye'></div>
+      <div class='eye'></div>
+
+    </div>
+  </section>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
