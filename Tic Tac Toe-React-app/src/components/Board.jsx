@@ -2,17 +2,39 @@ import React from 'react';
 import Square from './Square';
 
 class Board extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+     player: 'X',
+     value: null,
+    }
+    this.changePlayer = this.changePlayer.bind(this)
+  }
+
+  changePlayer (){
+    switch(this.state.player){
+     case 'X':
+       this.setState({
+         player: 'O',
+      });
+       break;
+       default:
+         this.setState({
+           player: 'X',
+          });
+    }
+  }
     renderSquare(i) {
-      return <Square />;
+      return <Square props={this.state.player}/>;
     }
   
     render() {
-      const status = 'Next player: X';
+      const status = `Next player: ${this.state.player}`;
   
       return (
         <React.Fragment>
           <div className="status h2 text-center">{status}</div>
-          <div className="board">
+          <div className="board" onClick={this.changePlayer}>
               {this.renderSquare(0)}
               {this.renderSquare(1)}
               {this.renderSquare(2)}
