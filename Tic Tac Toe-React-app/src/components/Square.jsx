@@ -1,10 +1,9 @@
 import React from 'react';
-import Board from './Board';
 
 
 class Square extends React.Component {
-  constructor(props){
-    super(props)
+  constructor(){
+    super()
     this.state = {
       value : null,
       
@@ -16,13 +15,17 @@ this.changeValue = this.changeValue.bind(this)
 } 
  
 changeValue(){
-   
-   if (this.props.player !== 'X'){
-     this.setState({value: 'O'})
-   }else {
-     this.setState({value: "X"})
+  switch(this.props.player){
+    case 'X':
+      this.setState({
+        value: 'X',
+     });
+      break;
+      default:
+        this.setState({
+          value: 'O',
+         });
    }
-  
   }
 
     render() {

@@ -6,7 +6,6 @@ class Board extends React.Component {
     super(props)
     this.state = {
      player: 'X',
-     value: null,
     }
     this.changePlayer = this.changePlayer.bind(this)
   }
@@ -24,8 +23,10 @@ class Board extends React.Component {
           });
     }
   }
+
     renderSquare(i) {
-      return <Square props={this.state.player}/>;
+      const player = this.state.player;
+      return <Square player={player}/>;
     }
   
     render() {
