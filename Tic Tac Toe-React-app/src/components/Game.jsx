@@ -3,6 +3,7 @@ import Board from './Board';
 
 class Game extends React.Component {
     render() {
+ 
       return (
         <article className="game container mt-5">
           <section className="row">

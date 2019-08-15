@@ -9,8 +9,11 @@ class Board extends React.Component {
     }
     this.changePlayer = this.changePlayer.bind(this)
   }
-
+  
+  
   changePlayer (){
+    
+
     switch(this.state.player){
      case 'X':
        this.setState({
@@ -23,6 +26,8 @@ class Board extends React.Component {
           });
     }
   }
+  
+  
 
     renderSquare(i) {
       const player = this.state.player;
