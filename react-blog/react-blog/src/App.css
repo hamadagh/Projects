@@ -1,6 +1,23 @@
+/* navbar */
+
+@media only screen and (min-width: 987px) and (max-width: 1360px) {
+  .logo{
+    margin-right: 51vw;
+  }
+}
+@media only screen and (min-width: 1361px)  {
+  .logo{
+    margin-right: 65vw;
+  }
+}
+/* navbar */
+
+
+/* Create a post */
 .row{
   height: 50px;
 }
 #textarea{
   height: 280px;
 }
+/* Create a post */
