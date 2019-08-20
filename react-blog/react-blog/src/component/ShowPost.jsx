@@ -4,7 +4,7 @@ export class ShowPost extends Component {
     render() {
         return (
             <div>
-                
+                <h2>Show Post</h2>
             </div>
         )
     }

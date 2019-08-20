@@ -1,6 +1,6 @@
-@media only screen and (min-width: 991px) {
-#navbarNav {
-  justify-content: center;
+.row{
+  height: 50px;
 }
-
+#textarea{
+  height: 280px;
 }
