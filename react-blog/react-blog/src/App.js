@@ -5,7 +5,6 @@ import CreatePost from './component/CreatePost';
 import ShowPost from './component/ShowPost';
 import './App.css';
 import {BrowserRouter, Route} from 'react-router-dom';
-import { PropsRoute } from 'react-router-with-props';
 
 class App extends React.Component {
   state = {
@@ -20,18 +19,18 @@ class App extends React.Component {
     
   }
   render(){
-    const post = this.state;
+  
     return (
       <BrowserRouter>
       <div className="App">
          <NavBar />
-         <Route exact path='/' component={Home} />
+         <Route path='/Home' component={Home} />
          <Route path='/CreatePost' component={CreatePost} />
-         <PropsRoute path='/ShowPost' component={ShowPost} post={post}/>
+         <Route path='/ShowPost' render={ () => <ShowPost props={this.state.post}/>  } />
       </div>
       </BrowserRouter>
      
-    );
+    )
   }
 
 }

@@ -8,9 +8,8 @@ export class CreatePost extends Component {
     }
 
     render() {
-        const createPost = () => {
             
-        }
+        
         return (
             <div className='container-fluid text-center'>
                 <h2 className="mt-5 mb-4">Create a Post</h2>

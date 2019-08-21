@@ -1,15 +1,26 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class ShowPost extends Component {
+const ShowPost = ({props}) => {
 
-    render() {
+    const addPost = props.map( post =>{
+        return(
+            <div className="post">
+                <h2>{post.title}</h2>
+                <h5>{post.username}</h5>
+                <p>{post.textArea}</p>
 
-        return (
-            <div>
-                <h2>Show Post</h2>
             </div>
         )
-    }
+    })
+
+    
+
+        return (
+            <div className="post-list">
+                {addPost}
+            </div>
+        )
+    
 }
 
 export default ShowPost
