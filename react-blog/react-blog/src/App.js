@@ -13,7 +13,12 @@ class App extends React.Component {
         title: "React",
         username: "Anonymous",
         textArea: "ReactJS basically is an open-source JavaScript library which is used for building user interfaces specifically for single page applications. It's used for handling view layer for web and mobile apps. React also allows us to create reusable UI components."
-      }
+      },
+      {
+        title: "Node.js",
+        username: "John",
+        textArea: "Node.js (Node) is an open source development platform for executing JavaScript code server-side. ... Node.js is intended to run on a dedicated HTTP server and to employ a single thread with one process at a time. Node.js applications are event-based and run asynchronously."
+      },
     ]
 
     
