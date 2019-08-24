@@ -6,9 +6,9 @@ const ShowPost = ({props}) => {
         
         return(
              
-            <div className="post container mt-5" id={index}>
+            <div className="post container mt-5" id={index} key={index}>
                 <h2>{post.title}</h2>
-                <h5>by: {post.username}</h5>
+                <h5>by: {post.userName}</h5>
                 <p>{post.textArea}</p>
             </div>
         )
