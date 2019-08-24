@@ -5,7 +5,7 @@ const NavBar = () => {
     return(
         <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark pl-5">
-  <NavLink to="/Home" className="navbar-brand logo" >Blog</NavLink>
+  <NavLink to="/Home" className="navbar-brand logo" ><span id="T-letter">T</span>echBlog</NavLink>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>

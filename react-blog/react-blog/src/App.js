@@ -11,7 +11,7 @@ class App extends React.Component {
     post : [
       {
         title: "React",
-        userName: "Anonymous",
+        userName: "Layla",
         textArea: "ReactJS basically is an open-source JavaScript library which is used for building user interfaces specifically for single page applications. It's used for handling view layer for web and mobile apps. React also allows us to create reusable UI components."
       },
       {
@@ -25,8 +25,8 @@ class App extends React.Component {
   }
 
   handleStatePost = (newPost) =>{
-this.setState(() => {
-let prevState = this.state.post;
+this.setState((state) => {
+let prevState = state.post;
 return prevState.push(newPost);
 }
 

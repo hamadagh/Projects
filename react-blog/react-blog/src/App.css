@@ -1,14 +1,23 @@
 /* navbar */
-
-@media only screen and (min-width: 987px) and (max-width: 1360px) {
+@media only screen and (min-width: 992px) and (max-width: 1240px) {
   .logo{
-    margin-right: 51vw;
+    margin-right: 43vw;
+  }
+}
+@media only screen and (min-width: 1241px) and (max-width: 1360px) {
+  .logo{
+    margin-right: 55vw;
   }
 }
 @media only screen and (min-width: 1361px)  {
   .logo{
-    margin-right: 65vw;
+    margin-right: 59vw;
   }
+}
+#T-letter {
+  color: #89CE94;
+  font-weight: bolder;
+  font-size: 40px
 }
 /* navbar */
 
@@ -21,3 +30,12 @@
   height: 280px;
 }
 /* Create a post */
+
+/* show Post */
+
+.post h5 .username{
+  color: #89CE94;
+}
+
+/* show Post */
+
