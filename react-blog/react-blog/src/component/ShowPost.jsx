@@ -3,7 +3,6 @@ import React from 'react'
 const ShowPost = ({props}) => {
 
     const addPost = props.map( (post, index) => {
-        
         return(
              
             <div className="post container mt-5 shadow p-3 mb-5 bg-white rounded" id={index} key={index}>

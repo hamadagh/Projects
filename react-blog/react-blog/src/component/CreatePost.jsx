@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { restElement } from '@babel/types';
 
 export class CreatePost extends Component {
     state = {
@@ -12,7 +13,8 @@ export class CreatePost extends Component {
     }
     handleSubmit = (e) => {
         e.preventDefault();
-     this.props.handleStatePost(this.state)      
+     this.props.handleStatePost(this.state);
+     
     }
 
     componentDidUpdate
