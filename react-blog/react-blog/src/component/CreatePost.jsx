@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { restElement } from '@babel/types';
 
 export class CreatePost extends Component {
     state = {

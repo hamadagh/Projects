@@ -6,6 +6,7 @@ import ShowPost from './component/ShowPost';
 import './App.css';
 import {BrowserRouter, Route} from 'react-router-dom';
 
+
 class App extends React.Component {
   state = {
     post : [
