@@ -5,6 +5,8 @@ import CreatePost from './component/CreatePost';
 import ShowPost from './component/ShowPost';
 import './App.css';
 import {BrowserRouter, Route} from 'react-router-dom';
+import Post from './component/Post';
+
 
 
 class App extends React.Component {
@@ -42,6 +44,7 @@ return prevState.push(newPost);
          <Route path='/Home' component={Home} />
          <Route path='/CreatePost' render={ () => <CreatePost handleStatePost={this.handleStatePost}/>  }  />
          <Route path='/ShowPost' render={ () => <ShowPost props={this.state.post}/>  } />
+         <Route path='/:post_id' component={Post}/>
       </div>
       </BrowserRouter>
      
