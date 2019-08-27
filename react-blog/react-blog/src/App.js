@@ -41,10 +41,11 @@ return prevState.push(newPost);
       <BrowserRouter>
       <div className="App">
          <NavBar />
+         <Route path='/ShowPost/:postId' component={Post}/>
          <Route path='/Home' component={Home} />
          <Route path='/CreatePost' render={ () => <CreatePost handleStatePost={this.handleStatePost}/>  }  />
-         <Route path='/ShowPost' render={ () => <ShowPost props={this.state.post}/>  } />
-         <Route path='/:post_id' component={Post}/>
+         <Route exact path='/ShowPost' render={ () => <ShowPost props={this.state.post}/>  } />
+         
       </div>
       </BrowserRouter>
      
