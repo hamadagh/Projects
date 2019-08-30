@@ -6,8 +6,8 @@ export class Home extends Component {
     
         return (
             <div>
-                <div className='home-header'>
-                    <h2 className='text-center'><span>T</span>echBlog</h2>
+                <div>
+                    <h2 className='home-header text-center'>T<span className='echBlo'>echBlo</span>g</h2>
                 </div>
                 <div className='isometric text-center'>
                 <Isometric />
