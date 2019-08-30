@@ -65,6 +65,9 @@
 .IT{
   color: #89CE94;
 }
+.shadows{
+  text-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
+}
 /* SVG */
 svg{
   width: 200px;
