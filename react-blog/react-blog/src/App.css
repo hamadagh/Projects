@@ -49,10 +49,17 @@
 
 .home-header{
   position: relative;
-  top: 85px;
+  top: 145px;
   left: 5px;
 }
-.echBlo{
+.it{
+  margin-right: 75px; 
+  font-size: 90px;
+  color: white;
+}
+.it1{
+  margin-left: 75px;
+  font-size: 90px;
   color: white;
 }
 /* SVG */
