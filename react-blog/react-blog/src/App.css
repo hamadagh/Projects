@@ -47,9 +47,10 @@
 
 /* Home page */
 
-s
+
 .IT{
   color: #89CE94;
+  font-size: 60px;
 }
 .shadows{
   text-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3);
@@ -57,17 +58,18 @@ s
 /* SVG */
 svg{
   width: 400px;
+  margin-top: 10vh;
 
 
 }
 svg #Layer_6{
-  animation-duration: 2.0s;
+  animation-duration: 1.4s;
   animation-name: animateSvg;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 svg #Layer_5{
-  animation-duration: 2.0s;
+  animation-duration: 1.4s;
   animation-name: animateSvg;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -81,7 +83,7 @@ svg #Layer_5{
   }
 }
 svg #Layer_5{
-  animation-duration: 2.0s;
+  animation-duration: 1.4s;
   animation-name: animateSvg1;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -92,6 +94,27 @@ svg #Layer_5{
   }
   to {
     transform: translateX(0) translateY(-10px);
+  }
+}
+svg #Screen {
+  animation-duration: 1.4s;
+  animation-name: animateScreen;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes animateScreen {
+  from {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+
+  }
+  to {
+    transform: translateX(25px) translateY(0);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateX(40px) translateY(0);
+    opacity: 0;
   }
 }
 

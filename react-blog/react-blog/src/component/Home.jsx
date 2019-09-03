@@ -6,8 +6,8 @@ export class Home extends Component {
     
         return (
             <div>
-                <h1 className='text-center mt-5 shadows'>A Platform For Sharing Knowledge</h1>
-                <h1 className='text-center shadows'>And <span className='IT'>IT</span> Solution</h1>
+                <h1 className='text-center mt-5 shadows'>A platform for sharing knowledge</h1>
+                <h1 className='text-center shadows'>and <span className='IT'>IT</span> solutions</h1>
               
                 <div className='isometric d-flex justify-content-center'>
                 <Isometric/>
